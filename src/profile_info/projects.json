@@ -1,35 +1,40 @@
 {
   "projects": [
     {
-      "name": "Credenz Reverse Coding Round 1",
-      "description": "Led team to develop a gamified Quiz platform for annual Tech fest 'Credenz', handling 2000+ student participation.",
-      "link":"http:/github.com/Omkar-Wagholikar/",
-      "technologies": ["Python", "Django", "Docker"]
+      "name": "Brags",
+      "description": "A Python library to configure and build dynamic Retrieval-Augmented Generation (RAG) pipelines. Integrates Python and Go for performance while leveraging LangChain abstractions.",
+      "link":"https:/github.com/Omkar-Wagholikar/adora",
+      "technologies": ["Python", "Go", "Lang Chain"]
+    },
+    {
+      "name": "Toy_Grep",
+      "description": "A custom regex engine built from scratch in Go. Demonstrates regex parsing, pattern matching, and core text search algorithms.",
+      "link":"https:/github.com/Omkar-Wagholikar/toy_grep",
+      "technologies": ["Go"]
     },
     {
       "name": "Credenz Main App",
-      "description": "Developed REST API backend and Flutter app for event management, achieving 100+ Play Store downloads.",
-      "link":"http:/github.com/Omkar-Wagholikar/",
+      "description": "REST API backend with Django and a companion Flutter app for event management. Achieved 100+ Play Store downloads and streamlined event workflows.",
+      "link":"https:/github.com/Omkar-Wagholikar/",
       "technologies": ["Django", "Flutter"]
     },    
     {
       "name": "Bloom rs",
-      "description": "High Concurrency Bloom Filter implementations in rust.",
-      "link":"http:/github.com/Omkar-Wagholikar/",
+      "description": "High-performance Bloom Filter implementations in Rust optimized for concurrency. Focused on memory efficiency and scalability under heavy workloads.",
+      "link":"https:/github.com/Omkar-Wagholikar/Bloom_rs",
       "technologies": ["Bloom filters","Concurrency","Rust"]
     },
     {
       "name": "myDB",
-      "description": "Writing a SQL Database from scratch",
-      "link":"http:/github.com/Omkar-Wagholikar/",
+      "description": "A SQL database written from scratch in Rust. Implements core concepts like B+ trees, query parsing, and storage management inspired by SQLite.",
+      "link":"https:/github.com/Omkar-Wagholikar/myDb",
       "technologies":["B+ trees", "SQLite", "Rust"]
     },
     {
       "name":"EduNexus",
-      "description":"",
-      "link":"http:/github.com/Omkar-Wagholikar/",
+      "description":"An e-learning platform built with Django to connect students and educators. Provides course management, user authentication, and content delivery features.",
+      "link":"https:/github.com/Omkar-Wagholikar/",
       "technologies":["Django","Python"]
     }
-
   ]
 }
