@@ -54,7 +54,7 @@ function App() {
     <ThemeProvider defaultTheme="dark">
       <div className="min-h-screen transition-all duration-500">
         {/* Enhanced Navigation */}
-        <div className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50">
+        <div className="fixed bottom-6 right-1 transform -translate-x+1/2 z-50">
           <Tabs value={activeView} onValueChange={setActiveView}>
             <TabsList className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md shadow-2xl border border-slate-200/50 dark:border-slate-700/50 p-1 rounded-full">
               <TabsTrigger 
