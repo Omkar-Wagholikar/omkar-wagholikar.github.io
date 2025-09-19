@@ -69,7 +69,7 @@ const PersonalProfile = () => {
                       {[
                         { icon: GitHubLogoIcon, href: "https://github.com/Omkar-Wagholikar", color: "hover:bg-gray-100 dark:hover:bg-gray-700" },
                         { icon: LinkedInLogoIcon, href: "https://linkedin.com/in/Omkar-Wagholikar", color: "hover:bg-blue-100 dark:hover:bg-blue-900" },
-                        { icon: EnvelopeClosedIcon, href: "mailto:omkarrwagholikar@gmail.com", color: "hover:bg-green-100 dark:hover:bg-green-900" }
+                        { icon: EnvelopeClosedIcon, href: "mailto:omkarrwagholikar@gmail.com", color: "hover:bg-green-100 dark:hover:bg-green-900" },
                       ].map((social, index) => (
                         <Button
                           key={index}
@@ -98,9 +98,11 @@ const PersonalProfile = () => {
               <div>
                 <h3 className="text-base sm:text-lg font-semibold mb-2">About Me</h3>
                 <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
-                  Computer Engineering student at Pune Institute of Technology with a CGPA of 8.8. 
-                  Passionate about backend development, cloud technologies, and creating scalable solutions. 
-                  Technical Lead at IEEE Student Branch with strong problem-solving skills.
+I'm Omkar Wagholikar, a software engineer specializing in full-stack development and AI. I build production systems using Python, Django, React, and frameworks like Flask and Celery. I’m also into generative AI, having created a Python package for on-device document-based conversations.
+<br /> <br />
+I’ve won hackathons at AIT and Impetus, PICT, and served as a student leader at PICT IEEE. Outside of coding, I’m a graphic designer and photographer.
+<br /> <br />
+Let’s connect and chat tech!
                 </p>
               </div>
             </div>
