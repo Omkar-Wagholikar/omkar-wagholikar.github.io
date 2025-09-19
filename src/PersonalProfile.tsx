@@ -5,6 +5,7 @@ import {
   LinkedInLogoIcon,
   EnvelopeClosedIcon,
 } from "@radix-ui/react-icons";
+import MediumIcon from './MediumIcon';
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -69,6 +70,7 @@ const PersonalProfile = () => {
                       {[
                         { icon: GitHubLogoIcon, href: "https://github.com/Omkar-Wagholikar", color: "hover:bg-gray-100 dark:hover:bg-gray-700" },
                         { icon: LinkedInLogoIcon, href: "https://linkedin.com/in/Omkar-Wagholikar", color: "hover:bg-blue-100 dark:hover:bg-blue-900" },
+                        { icon: MediumIcon, href: "https://medium.com/@Omkar-Wagholikar", color: "hover:bg-gray-100 dark:hover:bg-gray-700" },
                         { icon: EnvelopeClosedIcon, href: "mailto:omkarrwagholikar@gmail.com", color: "hover:bg-green-100 dark:hover:bg-green-900" },
                       ].map((social, index) => (
                         <Button
