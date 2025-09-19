@@ -17,6 +17,7 @@ import _skills from "./profile_info/skills.json";
 import _experiences from "./profile_info/experiences.json";
 import _projects from "./profile_info/projects.json";
 import _education from "./profile_info/education.json";
+import React from "react";
 
 const skills = _skills.skills;
 const experiences = _experiences.experiences;
@@ -176,7 +177,12 @@ Let’s connect and chat tech!
                     </CardHeader>
                     <CardContent className="px-3 sm:px-6 pt-0">
                       <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                        {exp.description}
+                        {exp.description.split('\n').map((line, idx) => (
+                          <React.Fragment key={idx}>
+                            {line}
+                            <br />
+                          </React.Fragment>
+                        ))}
                       </p>
                     </CardContent>
                   </Card>

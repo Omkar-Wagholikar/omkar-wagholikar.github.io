@@ -4,7 +4,7 @@
       "title": "Software Developer",
       "company": "NiCE Solutions",
       "duration": "July 2025 - Current",
-      "description": "Working on LLM and RAG"
+      "description": "Working in the CX R&D team, building and tuning LLMs and RAG pipelines for enterprise-grade AI solutions. \n\nMy current projects include the Active Copilot (ACP) assistant and Knowledge Hub, leveraging Amazon Bedrock, Python, and modern NLP stacks to bring scalable AI to customer experience workflows."
     },
     {
       "title": "Project Assistant",
@@ -23,7 +23,7 @@
       "title": "Backend Engineering Intern",
       "company": "Cosyugma Info LLP",
       "duration": "March 2024 – April 2024",
-      "description": "Architected backend solutions, developed APIs, performed unit testing, and set up CI/CD pipelines with Redis caching."
+      "description": "Architected backend solutions, developed APIs, performed unit testing, and set up CI/CD pipelines with Redis caching.\nHelped integrating backend endpoints with flutter frontend."
     },
     {
       "title": "Research Associate",
