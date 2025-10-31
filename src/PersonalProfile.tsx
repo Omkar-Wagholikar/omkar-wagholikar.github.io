@@ -28,13 +28,13 @@ const PersonalProfile = () => {
 
   return (
     // <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 p-2 sm:p-4 transition-all duration-500">
-    <div className="min-h-screen p-2 sm:p-4 transition-all duration-500">
+    <div className="min-h-screen p-2 sm:p-4 md:p-6 transition-all duration-500">
 
       <div className="max-w-6xl mx-auto">
         {/* Hero Section */}
-        <Card className="mb-6 sm:mb-8 border-0 shadow-2xl bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-1 overflow-hidden">
+        <Card className="mb-6 sm:mb-8 border-2 border-slate-200/60 dark:border-slate-700/60 shadow-2xl bg-white/95 dark:bg-slate-800/95 backdrop-blur-xl hover:shadow-blue-500/20 dark:hover:shadow-purple-500/20 transition-all duration-500 transform hover:scale-[1.01] overflow-hidden">
           <CardHeader className="relative overflow-hidden rounded-b-2xl pb-6 sm:pb-8">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10 dark:from-blue-400/10 dark:to-purple-400/10"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 via-purple-500/5 to-pink-500/5 dark:from-blue-400/10 dark:via-purple-400/10 dark:to-pink-400/10"></div>
             <div className="relative flex flex-col items-center gap-4 sm:gap-6">
               {/* Mobile: Stack everything vertically, Desktop: Keep original layout */}
               <div className="flex flex-col sm:flex-row items-center justify-between w-full gap-4 sm:gap-6">
@@ -113,11 +113,13 @@ Let’s connect and chat tech!
         </Card>
 
         {/* Skills Section */}
-        <Card className="mb-6 sm:mb-8 border-0 shadow-xl bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm">
+        <Card className="mb-6 sm:mb-8 border-2 border-slate-200/60 dark:border-slate-700/60 shadow-xl bg-white/95 dark:bg-slate-800/95 backdrop-blur-xl hover:shadow-purple-500/20 transition-all duration-500 transform hover:scale-[1.01]">
           <CardHeader className="px-4 sm:px-6">
             <div className="flex items-center gap-3">
-              <Code className="w-5 h-5 sm:w-6 sm:h-6 text-purple-500" />
-              <CardTitle className="text-xl sm:text-2xl">Technical Skills</CardTitle>
+              <div className="p-2 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg shadow-lg">
+                <Code className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+              </div>
+              <CardTitle className="text-xl sm:text-2xl bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent font-bold">Technical Skills</CardTitle>
             </div>
           </CardHeader>
           <CardContent className="px-4 sm:px-6">
@@ -132,7 +134,7 @@ Let’s connect and chat tech!
                       <Badge 
                         key={skill} 
                         variant="secondary" 
-                        className="text-xs sm:text-sm transition-all duration-300 hover:scale-105 hover:shadow-md cursor-default px-2 py-1"
+                        className="text-xs sm:text-sm transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-purple-500/30 cursor-default px-3 py-1.5 bg-gradient-to-r from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-700 border border-slate-300 dark:border-slate-600"
                         style={{
                           animationDelay: `${index * 100}ms`
                         }}
@@ -150,11 +152,13 @@ Let’s connect and chat tech!
         {/* Experience & Projects Grid - Stack on mobile */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-6 sm:mb-8">
           {/* Experience Section */}
-          <Card className="border-0 shadow-xl bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm">
+          <Card className="border-2 border-slate-200/60 dark:border-slate-700/60 shadow-xl bg-white/95 dark:bg-slate-800/95 backdrop-blur-xl hover:shadow-green-500/20 transition-all duration-500 transform hover:scale-[1.01]">
             <CardHeader className="px-4 sm:px-6">
               <div className="flex items-center gap-3">
-                <Briefcase className="w-5 h-5 sm:w-6 sm:h-6 text-green-500" />
-                <CardTitle className="text-xl sm:text-2xl">Experience</CardTitle>
+                <div className="p-2 bg-gradient-to-br from-green-500 to-emerald-500 rounded-lg shadow-lg">
+                  <Briefcase className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+                </div>
+                <CardTitle className="text-xl sm:text-2xl bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent font-bold">Experience</CardTitle>
               </div>
             </CardHeader>
             <CardContent className="px-4 sm:px-6">
@@ -162,7 +166,7 @@ Let’s connect and chat tech!
                 {experiences.map((exp) => (
                   <Card 
                     key={exp.title} 
-                    className="border border-slate-200 dark:border-slate-700 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+                    className="border-2 border-slate-200/80 dark:border-slate-700/80 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 hover:border-green-400 dark:hover:border-green-500 bg-gradient-to-br from-white to-slate-50 dark:from-slate-800 dark:to-slate-900"
                   >
                     <CardHeader className="pb-2 sm:pb-3 px-3 sm:px-6 pt-3 sm:pt-6">
                       <CardTitle className="text-base sm:text-lg text-blue-600 dark:text-blue-400 leading-tight">
@@ -192,11 +196,13 @@ Let’s connect and chat tech!
           </Card>
 
           {/* Projects Section */}
-          <Card className="border-0 shadow-xl bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm">
+          <Card className="border-2 border-slate-200/60 dark:border-slate-700/60 shadow-xl bg-white/95 dark:bg-slate-800/95 backdrop-blur-xl hover:shadow-orange-500/20 transition-all duration-500 transform hover:scale-[1.01]">
             <CardHeader className="px-4 sm:px-6">
               <div className="flex items-center gap-3">
-                <Code className="w-5 h-5 sm:w-6 sm:h-6 text-orange-500" />
-                <CardTitle className="text-xl sm:text-2xl">Projects</CardTitle>
+                <div className="p-2 bg-gradient-to-br from-orange-500 to-red-500 rounded-lg shadow-lg">
+                  <Code className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+                </div>
+                <CardTitle className="text-xl sm:text-2xl bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent font-bold">Projects</CardTitle>
               </div>
             </CardHeader>
             <CardContent className="px-4 sm:px-6">
@@ -204,7 +210,7 @@ Let’s connect and chat tech!
                 {projects.map((project) => (
                   <Card 
                     key={project.name} 
-                    className="border border-slate-200 dark:border-slate-700 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+                    className="border-2 border-slate-200/80 dark:border-slate-700/80 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 hover:border-orange-400 dark:hover:border-orange-500 bg-gradient-to-br from-white to-slate-50 dark:from-slate-800 dark:to-slate-900"
                   >
                     <CardHeader className="pb-2 sm:pb-3 px-3 sm:px-6 pt-3 sm:pt-6">
                       <div className="flex items-start justify-between gap-2">
@@ -244,11 +250,13 @@ Let’s connect and chat tech!
         </div>
 
         {/* Education Section */}
-        <Card className="border-0 shadow-xl bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm">
+        <Card className="border-2 border-slate-200/60 dark:border-slate-700/60 shadow-xl bg-white/95 dark:bg-slate-800/95 backdrop-blur-xl hover:shadow-indigo-500/20 transition-all duration-500 transform hover:scale-[1.01]">
           <CardHeader className="px-4 sm:px-6">
             <div className="flex items-center gap-3">
-              <GraduationCap className="w-5 h-5 sm:w-6 sm:h-6 text-indigo-500" />
-              <CardTitle className="text-xl sm:text-2xl">Education</CardTitle>
+              <div className="p-2 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-lg shadow-lg">
+                <GraduationCap className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+              </div>
+              <CardTitle className="text-xl sm:text-2xl bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent font-bold">Education</CardTitle>
             </div>
           </CardHeader>
           <CardContent className="px-4 sm:px-6">

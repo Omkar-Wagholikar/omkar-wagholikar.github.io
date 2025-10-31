@@ -1,0 +1,16 @@
+{
+    "blogs":[
+        {
+            "title": "Distributed Systems Deep Dive: Paxos",
+            "file_path": "assets/blogs/paxos.md",
+            "tags": ["Distributed Systems", "Consensus Algorithms", "Paxos"],
+            "date": "2024-06-15"
+        },
+        {
+            "title": "Distributed Systems Deep Dive: Paxos",
+            "file_path": "assets/blogs/paxos.md",
+            "tags": ["Distributed Systems", "Consensus Algorithms", "Paxos"],
+            "date": "2024-06-15"
+        }
+    ]
+}
