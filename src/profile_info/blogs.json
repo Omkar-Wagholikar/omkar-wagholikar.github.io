@@ -1,16 +1,46 @@
 {
-    "blogs":[
+    "blogs": [
         {
             "title": "Distributed Systems Deep Dive: Paxos",
-            "file_path": "assets/blogs/paxos.md",
+            "file_path": "assets/blogs/PaxosConsensus.md",
             "tags": ["Distributed Systems", "Consensus Algorithms", "Paxos"],
-            "date": "2024-06-15"
+            "date": "2025-10-31"
         },
         {
-            "title": "Distributed Systems Deep Dive: Paxos",
-            "file_path": "assets/blogs/paxos.md",
-            "tags": ["Distributed Systems", "Consensus Algorithms", "Paxos"],
-            "date": "2024-06-15"
+            "title": "Distributed Systems Deep Dive: Leaderless replication",
+            "file_path": "assets/blogs/LeaderLessReplication.md",
+            "tags": ["Distributed Systems", "Replication", "Leaderless"],
+            "date": "2025-10-24"
+        },
+        {
+            "title": "Distributed Systems Deep Dive: Single Leader Replication",
+            "file_path": "assets/blogs/SingleLeaderReplication.md",
+            "tags": ["Distributed Systems", "Replication", "Leader-based"],
+            "date": "2025-10-17"
+        },
+        {
+            "title": "Distributed Systems Deep Dive: Durability and Replication",
+            "file_path": "assets/blogs/WhatisReplication.md",
+            "tags": ["Distributed Systems", "Durability", "Replication"],
+            "date": "2025-10-10"
+        },
+        {
+            "title": "Design Patterns: Observer Pattern",
+            "file_path": "assets/blogs/Observer.md",
+            "tags": ["Design Patterns", "Observer", "Software Engineering"],
+            "date": "2025-10-03"
+        },
+        {
+            "title": "Design Patterns: Command Pattern",
+            "file_path": "assets/blogs/Command_pattern.md",
+            "tags": ["Design Patterns", "Command", "Software Engineering"],
+            "date": "2025-09-25"
+        },
+        {
+            "title": "Design Patterns: Strategy Pattern",
+            "file_path": "assets/blogs/Strategy.md",
+            "tags": ["Design Patterns", "Strategy", "Software Engineering"],
+            "date": "2025-09-19"
         }
     ]
 }
