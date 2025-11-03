@@ -49,6 +49,11 @@ const Blogs = () => {
         content = content.replace(/!\[([^\]]*)\]\(\.\/([^)]+)\)/g, (_, alt, src) => {
           return `![${alt}](/assets/blogs/${src})`;
         });
+
+        // Process relative links (like ./Strategy.java) in markdown
+        content = content.replace(/\[([^\]]+)\]\(\.\/([^)]+)\)/g, (_, text, path) => {
+          return `[${text}](/assets/blogs/${path})`;
+        });
         
         // Parse markdown to HTML using marked
         const html = await marked.parse(content);
