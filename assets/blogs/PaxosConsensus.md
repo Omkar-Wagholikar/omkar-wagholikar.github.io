@@ -1,4 +1,4 @@
-<!-- # Distributed Systems Deep Dive: Paxos -->
+# Distributed Systems Deep Dive: Paxos
 
 In this blog, we take a deep dive into Paxos, a foundational consensus algorithm used in distributed systems. Paxos plays a critical role in enabling multi-leader replication by ensuring consistency across nodes, even in the presence of failures.
 
@@ -13,14 +13,6 @@ Here we define consensus is as a majority of nodes agreeing on a single decision
 
 --- 
 
-```java
-class Test {
-    public static void main(String [] args) {
-        // This is test
-    }
-}
-```
-
 ## Keywords for Paxos:
 There are 3 roles that a node may take, these nodes are not mutually exclusive and a single node may perform one or many of them simultaneously:
 * **Proposers:** Propose a certain value or operation to the cluster
@@ -33,10 +25,8 @@ There are 3 roles that a node may take, these nodes are not mutually exclusive a
 
 ---
 
-![Paxos Algorithm Visualization](./media/paxos.gif)
-
 ## Underlying assumption made by Paxos:
-1. **Stable storage for Promises and Accepted values:** If a node crashes then recovers all values it will still remember it's promises and accepted values
+1. **Stable storage for Promises and Accepted values:** If a node crashes then recovers all values it will still remember it’s promises and accepted values
 2. **Cluster Awareness:** Each node knows how many acceptor nodes form a majority (Quorum)
 3. **Fault Tolerance:** We are pretty relaxed with the network and hardware reliability, the algorithm function adequately even if one or more nodes crash or messages drop in transit
 4. **Eventual Progress:** Every node in the cluster will reach a single consensus over time
@@ -125,8 +115,6 @@ Specifically for Paxos this is also known as Dueling Proposers or Livelock
 **Solution:**
 * One of the most common solutions is to use slotted timestamps (accuracy up to nano second) as the proposed ID's
 
----
 
-## Conclusion
 
 While this post focused on the core concepts of Paxos, its real-world utility in systems using multi-leader replication becomes evident through optimized variants like Multi-Paxos.
