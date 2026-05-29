@@ -313,7 +313,7 @@ export default function Page() {
                 >
                   with a direct question
                 </Link>{" "}
-                and I&apos;ll respond whenever I can.
+                and I&apos;ll respond as soon as I can.
               </p>
             </div>
           </BlurFade>
