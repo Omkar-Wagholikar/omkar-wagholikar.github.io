@@ -174,7 +174,7 @@ export const DATA = {
             dates: "2024 - 2025",
             active: true,
             description:
-                "Full-stack academic file sharing platform: React SPA over a Django REST API on Postgres + pgvector, with Firebase auth, signed download URLs, and hybrid lexical + semantic search (BM25 + sentence-transformer embeddings) over PDF/PPTX/DOCX with OCR, LLM summaries, and hash-based deduplication.",
+                "Academic file-sharing platform with hybrid lexical + semantic search over PDFs, slides, and docs, plus OCR and LLM summaries.",
             technologies: [
                 "Django",
                 "React",
@@ -197,16 +197,16 @@ export const DATA = {
         },
         {
             title: "Project MAVIS",
-            href: "https://github.com/Project-MAVIS/Backend",
+            href: "https://github.com/Project-MAVIS/MAVIS",
             dates: "BE Project, 2024 - 2025",
             active: true,
             description:
-                "Media Authenticity Verification and Integrity System establishing provenance and media authenticity using hardware-backed security and advanced steganographic + cryptographic techniques. Engineered multi-layered approaches using Wavelet DCT, GAN-based steganographic watermarking, and Reed-Solomon encoding for tamper resistance against distortions.",
-            technologies: ["Django", "OpenCV", "PyTorch", "Python"],
+                "Media authenticity system that signs images at capture with an emulated Secure Enclave and verifies them via steganographic watermarks.",
+            technologies: ["Python", "FastAPI", "Gradio", "OpenCV", "PyWavelets"],
             links: [
                 {
                     type: "Source",
-                    href: "https://github.com/Project-MAVIS/Backend",
+                    href: "https://github.com/Project-MAVIS/MAVIS",
                     icon: <Icons.github className="size-3" />,
                 },
             ],
@@ -216,12 +216,17 @@ export const DATA = {
         {
             title: "BRAGS: Build your own RAGs",
             href: "https://pypi.org/project/brags/",
-            dates: "2024",
+            dates: "2024 - Present",
             active: true,
             description:
-                "Python package for easily deploying custom Retrieval-Augmented Generation (RAG) pipelines. Integrates a background Go file watcher to continuously monitor a document folder and keep the vector database synchronized in real time, automating document ingestion and vector index updates by listening and debouncing OS-level events.",
-            technologies: ["Python", "Go", "LangChain", "RAG"],
+                "CLI + Python package for spinning up custom RAG pipelines, with a live-syncing file watcher, hallucination checking, and an MCP server for Claude Code.",
+            technologies: ["Python", "Go", "FAISS", "Chroma", "tree-sitter", "MCP", "RAG"],
             links: [
+                {
+                    type: "Source",
+                    href: "https://github.com/Omkar-Wagholikar/brags",
+                    icon: <Icons.github className="size-3" />,
+                },
                 {
                     type: "Website",
                     href: "https://pypi.org/project/brags/",
@@ -232,12 +237,48 @@ export const DATA = {
             video: "",
         },
         {
+            title: "Cloudrive",
+            href: "https://github.com/Omkar-Wagholikar/Cloudrive",
+            dates: "2026",
+            active: true,
+            description:
+                "Self-hosted, Google Drive-style storage system with a Go backend built for low-RAM ARM devices and a native Android client with offline music playback.",
+            technologies: ["Go", "Kotlin", "Jetpack Compose", "SQLite", "SeaweedFS", "Kafka", "Media3"],
+            links: [
+                {
+                    type: "Source",
+                    href: "https://github.com/Omkar-Wagholikar/Cloudrive",
+                    icon: <Icons.github className="size-3" />,
+                },
+            ],
+            image: "/clouddrive.png",
+            video: "",
+        },
+        {
+            title: "Orbital8: SIMD Gravity Simulator",
+            href: "https://github.com/Omkar-Wagholikar/Orbital8",
+            dates: "2026",
+            active: true,
+            description:
+                "AVX2 SIMD-accelerated N-body gravity simulator capped at exactly 8 bodies, one vectorized pass per frame, rendered live with raylib.",
+            technologies: ["C", "AVX2", "SIMD", "raylib"],
+            links: [
+                {
+                    type: "Source",
+                    href: "https://github.com/Omkar-Wagholikar/Orbital8",
+                    icon: <Icons.github className="size-3" />,
+                },
+            ],
+            image: "/orbital8.png",
+            video: "",
+        },
+        {
             title: "Termion: Terminal Emulator",
             href: "https://github.com/Omkar-Wagholikar/Termion",
             dates: "2025",
             active: true,
             description:
-                "Terminal emulator built from scratch using PTY (pseudoterminal) for shell communication and egui. Implements ANSI escape code parsing for colored terminal output, non-blocking I/O, and command history.",
+                "Terminal emulator built from scratch on PTY and egui, with ANSI escape parsing, non-blocking I/O, and command history.",
             technologies: ["Rust", "egui", "nix", "PTY"],
             links: [
                 {
