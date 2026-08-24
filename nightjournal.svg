@@ -10,7 +10,7 @@
     </linearGradient>
   </defs>
 
-  <rect x="0" y="0" width="512" height="512" rx="96" fill="url(#njbg)"/>
+  <rect x="0" y="0" width="512" height="512" fill="url(#njbg)"/>
 
   <!-- stars -->
   <g fill="#c9a6ff" opacity="0.8">
