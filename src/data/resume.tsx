@@ -109,6 +109,18 @@ export const DATA = {
 
     work: [
         {
+            company: "Intangles: Fleet Management Software",
+            href: "https://www.intangles.ai/",
+            badges: [],
+            location: "Pune",
+            title: "Backend Development Engineer",
+            logoUrl: "/Intangles.png",
+            start: "June 2025",
+            end: "Present",
+            description:
+                "Added observability to python services. Optimized core API's and contribute to the platform stability of the company",
+        },
+        {
             company: "NiCE Ltd",
             href: "https://www.nice.com",
             badges: [],
@@ -116,7 +128,7 @@ export const DATA = {
             title: "Associate Software Development Engineer",
             logoUrl: "/nice.png",
             start: "July 2025",
-            end: "Present",
+            end: "June 2026",
             description:
                 "Optimized core backend application logic in C#, improving performance and reliability of critical paths. Fixed an infinite reprocessing issue in the DLQ by debugging and correcting routing logic to prevent unwanted retries. Designed document ingestion pipelines with checkpointing, batch processing, retry logic, and failure handling. Leveraged AWS services like Bedrock, Lambda, and Batch to build scalable, event-driven cloud solutions.",
         },
@@ -168,6 +180,145 @@ export const DATA = {
         },
     ],
     projects: [
+        // NightJournal
+        {
+            title: "NightJournal",
+            href: "https://github.com/Omkar-Wagholikar/NightJournal",
+            dates: "2026",
+            active: true,
+            description:
+                "Offline-first Android journaling app that runs on-device inference for voice transcription, mood detection, and calendar event extraction — no network, no cloud, no API keys.",
+            technologies: ["Kotlin", "Room", "whisper.cpp", "llama.cpp", "LiteRT-LM"],
+            links: [
+                {
+                    type: "Source",
+                    href: "https://github.com/Omkar-Wagholikar/NightJournal",
+                    icon: <Icons.github className="size-3" />,
+                },
+            ],
+            image: "/nightjournal.svg",
+            video: "",
+        },
+        // mavis
+        {
+            title: "Project MAVIS",
+            href: "https://github.com/Project-MAVIS/MAVIS",
+            dates: "BE Project, 2024 - 2025",
+            active: true,
+            description:
+                "Media authenticity system that signs images at capture with an emulated Secure Enclave and verifies them via steganographic watermarks.",
+            technologies: ["Python", "FastAPI", "Gradio", "OpenCV", "PyWavelets"],
+            links: [
+                {
+                    type: "Source",
+                    href: "https://github.com/Project-MAVIS/MAVIS",
+                    icon: <Icons.github className="size-3" />,
+                },
+            ],
+            image: "/mavis.png",
+            video: "",
+        },
+        // brags
+        {
+            title: "BRAGS: Build your own RAGs",
+            href: "https://pypi.org/project/brags/",
+            dates: "2024 - Present",
+            active: true,
+            description:
+                "CLI + Python package for spinning up custom RAG pipelines, with a live-syncing file watcher, hallucination checking, and an MCP server for Claude Code.",
+            technologies: ["Python", "Go", "FAISS", "Chroma", "tree-sitter", "MCP", "RAG"],
+            links: [
+                {
+                    type: "Source",
+                    href: "https://github.com/Omkar-Wagholikar/brags",
+                    icon: <Icons.github className="size-3" />,
+                },
+                {
+                    type: "Website",
+                    href: "https://pypi.org/project/brags/",
+                    icon: <Icons.globe className="size-3" />,
+                },
+            ],
+            image: "/brags.png",
+            video: "",
+        },
+        // cloud drive
+        {
+            title: "Cloudrive",
+            href: "https://github.com/Omkar-Wagholikar/Cloudrive",
+            dates: "2026",
+            active: true,
+            description:
+                "Self-hosted, Google Drive-style storage system with a Go backend built for low-RAM ARM devices and a native Android client with offline music playback.",
+            technologies: ["Go", "Kotlin", "Jetpack Compose", "SQLite", "SeaweedFS", "Kafka", "Media3"],
+            links: [
+                {
+                    type: "Source",
+                    href: "https://github.com/Omkar-Wagholikar/Cloudrive",
+                    icon: <Icons.github className="size-3" />,
+                },
+            ],
+            image: "/clouddrive.png",
+            video: "",
+        },
+        // termion
+        {
+            title: "Termion: Terminal Emulator",
+            href: "https://github.com/Omkar-Wagholikar/Termion",
+            dates: "2025",
+            active: true,
+            description:
+                "Terminal emulator built from scratch on PTY and egui, with ANSI escape parsing, non-blocking I/O, and command history.",
+            technologies: ["Rust", "egui", "nix", "PTY"],
+            links: [
+                {
+                    type: "Source",
+                    href: "https://github.com/Omkar-Wagholikar/Termion",
+                    icon: <Icons.github className="size-3" />,
+                },
+            ],
+            image: "/termion.png",
+            video: "",
+        },
+        // myDb
+        {
+            title: "myDb",
+            href: "https://github.com/Omkar-Wagholikar/myDb",
+            dates: "2026",
+            active: true,
+            description:
+                "SQLite-inspired database engine built from scratch in Rust, with a REPL, disk-backed pager, and rows stored in a B-tree paged in fixed 4KB blocks.",
+            technologies: ["Rust", "SQLite", "B-tree"],
+            links: [
+                {
+                    type: "Source",
+                    href: "https://github.com/Omkar-Wagholikar/myDb",
+                    icon: <Icons.github className="size-3" />,
+                },
+            ],
+            image: "/mydb.svg",
+            video: "",
+        },
+        // orbital8
+        {
+            title: "Orbital8: SIMD Gravity Simulator",
+            href: "https://github.com/Omkar-Wagholikar/Orbital8",
+            dates: "2026",
+            active: true,
+            description:
+                "AVX2 SIMD-accelerated N-body gravity simulator capped at exactly 8 bodies, one vectorized pass per frame, rendered live with raylib.",
+            technologies: ["C", "AVX2", "SIMD", "raylib"],
+            links: [
+                {
+                    type: "Source",
+                    href: "https://github.com/Omkar-Wagholikar/Orbital8",
+                    icon: <Icons.github className="size-3" />,
+                },
+            ],
+            image: "/orbital8.png",
+            video: "",
+        },
+        // Edunexus
         {
             title: "EduNexus",
             href: "https://github.com/Omkar-Wagholikar/EduNexus.git",
@@ -194,102 +345,7 @@ export const DATA = {
             ],
             image: "/edunexus.png",
             video: "",
-        },
-        {
-            title: "Project MAVIS",
-            href: "https://github.com/Project-MAVIS/MAVIS",
-            dates: "BE Project, 2024 - 2025",
-            active: true,
-            description:
-                "Media authenticity system that signs images at capture with an emulated Secure Enclave and verifies them via steganographic watermarks.",
-            technologies: ["Python", "FastAPI", "Gradio", "OpenCV", "PyWavelets"],
-            links: [
-                {
-                    type: "Source",
-                    href: "https://github.com/Project-MAVIS/MAVIS",
-                    icon: <Icons.github className="size-3" />,
-                },
-            ],
-            image: "/mavis.png",
-            video: "",
-        },
-        {
-            title: "BRAGS: Build your own RAGs",
-            href: "https://pypi.org/project/brags/",
-            dates: "2024 - Present",
-            active: true,
-            description:
-                "CLI + Python package for spinning up custom RAG pipelines, with a live-syncing file watcher, hallucination checking, and an MCP server for Claude Code.",
-            technologies: ["Python", "Go", "FAISS", "Chroma", "tree-sitter", "MCP", "RAG"],
-            links: [
-                {
-                    type: "Source",
-                    href: "https://github.com/Omkar-Wagholikar/brags",
-                    icon: <Icons.github className="size-3" />,
-                },
-                {
-                    type: "Website",
-                    href: "https://pypi.org/project/brags/",
-                    icon: <Icons.globe className="size-3" />,
-                },
-            ],
-            image: "/brags.png",
-            video: "",
-        },
-        {
-            title: "Cloudrive",
-            href: "https://github.com/Omkar-Wagholikar/Cloudrive",
-            dates: "2026",
-            active: true,
-            description:
-                "Self-hosted, Google Drive-style storage system with a Go backend built for low-RAM ARM devices and a native Android client with offline music playback.",
-            technologies: ["Go", "Kotlin", "Jetpack Compose", "SQLite", "SeaweedFS", "Kafka", "Media3"],
-            links: [
-                {
-                    type: "Source",
-                    href: "https://github.com/Omkar-Wagholikar/Cloudrive",
-                    icon: <Icons.github className="size-3" />,
-                },
-            ],
-            image: "/clouddrive.png",
-            video: "",
-        },
-        {
-            title: "Orbital8: SIMD Gravity Simulator",
-            href: "https://github.com/Omkar-Wagholikar/Orbital8",
-            dates: "2026",
-            active: true,
-            description:
-                "AVX2 SIMD-accelerated N-body gravity simulator capped at exactly 8 bodies, one vectorized pass per frame, rendered live with raylib.",
-            technologies: ["C", "AVX2", "SIMD", "raylib"],
-            links: [
-                {
-                    type: "Source",
-                    href: "https://github.com/Omkar-Wagholikar/Orbital8",
-                    icon: <Icons.github className="size-3" />,
-                },
-            ],
-            image: "/orbital8.png",
-            video: "",
-        },
-        {
-            title: "Termion: Terminal Emulator",
-            href: "https://github.com/Omkar-Wagholikar/Termion",
-            dates: "2025",
-            active: true,
-            description:
-                "Terminal emulator built from scratch on PTY and egui, with ANSI escape parsing, non-blocking I/O, and command history.",
-            technologies: ["Rust", "egui", "nix", "PTY"],
-            links: [
-                {
-                    type: "Source",
-                    href: "https://github.com/Omkar-Wagholikar/Termion",
-                    icon: <Icons.github className="size-3" />,
-                },
-            ],
-            image: "/termion.png",
-            video: "",
-        },
+        }
     ],
     hackathons: [
         {

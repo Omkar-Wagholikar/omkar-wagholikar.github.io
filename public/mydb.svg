@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2b2420"/>
+      <stop offset="100%" stop-color="#171310"/>
+    </linearGradient>
+    <linearGradient id="node" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f4713c"/>
+      <stop offset="100%" stop-color="#ce422b"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="512" height="512" rx="96" fill="url(#bg)"/>
+
+  <!-- B-tree edges -->
+  <g stroke="#e07b4f" stroke-width="10" stroke-linecap="round" opacity="0.9">
+    <line x1="256" y1="168" x2="176" y2="256"/>
+    <line x1="256" y1="168" x2="336" y2="256"/>
+    <line x1="176" y1="256" x2="128" y2="344"/>
+    <line x1="176" y1="256" x2="224" y2="344"/>
+    <line x1="336" y1="256" x2="288" y2="344"/>
+    <line x1="336" y1="256" x2="384" y2="344"/>
+  </g>
+
+  <!-- B-tree nodes -->
+  <g>
+    <circle cx="256" cy="168" r="30" fill="url(#node)"/>
+    <circle cx="176" cy="256" r="24" fill="url(#node)"/>
+    <circle cx="336" cy="256" r="24" fill="url(#node)"/>
+    <circle cx="128" cy="344" r="18" fill="url(#node)"/>
+    <circle cx="224" cy="344" r="18" fill="url(#node)"/>
+    <circle cx="288" cy="344" r="18" fill="url(#node)"/>
+    <circle cx="384" cy="344" r="18" fill="url(#node)"/>
+  </g>
+</svg>
