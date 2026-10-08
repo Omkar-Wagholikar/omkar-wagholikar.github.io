@@ -1,14 +1,14 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo } from "react";
 import { useTheme } from "next-themes";
 import {
     Cloud,
-    fetchSimpleIcons,
     ICloud,
     renderSimpleIcon,
     SimpleIcon,
 } from "react-icon-cloud";
+import iconData from "@/data/icon-cloud.json";
 
 export const cloudProps: Omit<ICloud, "children"> = {
     containerProps: {
@@ -61,23 +61,23 @@ export type DynamicCloudProps = {
     iconSlugs: readonly string[];
 };
 
-type IconData = Awaited<ReturnType<typeof fetchSimpleIcons>>;
+// Icon data is bundled (generated from simple-icons 14.0.0) instead of fetched at
+// runtime, so the cloud renders immediately and in color even when the CDN is slow
+// or blocked.
+const icons = iconData as Record<string, Omit<SimpleIcon, "slug">>;
 
 export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
-    const [data, setData] = useState<IconData | null>(null);
     const { theme } = useTheme();
 
-    useEffect(() => {
-        fetchSimpleIcons({ slugs: [...iconSlugs] }).then(setData);
-    }, [iconSlugs]);
-
-    const renderedIcons = useMemo(() => {
-        if (!data) return null;
-
-        return Object.values(data.simpleIcons).map((icon) =>
-            renderCustomIcon(icon, theme || "light")
-        );
-    }, [data, theme]);
+    const renderedIcons = useMemo(
+        () =>
+            iconSlugs
+                .filter((slug) => slug in icons)
+                .map((slug) =>
+                    renderCustomIcon({ slug, ...icons[slug] }, theme || "light")
+                ),
+        [iconSlugs, theme]
+    );
 
     return (
         // @ts-ignore
