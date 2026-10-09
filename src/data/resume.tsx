@@ -12,9 +12,9 @@ export const DATA = {
     location: "Pune, Maharashtra",
     locationLink: "https://www.google.com/maps/place/pune",
     description:
-        "22 year old Software Engineer at NiCE Ltd. I enjoy backend, data engineering, and building things that touch real systems — from event-driven cloud pipelines to RAG packages.",
+        "22 year old Backend Software Engineer at Intangles. I enjoy backend, data engineering, and building things that touch real systems — from event-driven cloud pipelines to RAG packages.",
     summary:
-        "I'm a **Software Engineer** and **Full-Stack Developer** working on backend systems in **C#**, where I optimize application logic, debug distributed workflows, and build scalable document ingestion pipelines on cloud infrastructure. My interests span systems programming, Generative AI, and building reliable developer-focused tools.\n\nMy day-to-day toolbox includes **Python, Java, JavaScript/TypeScript, and C#**, with meaningful experience across **Django/DRF, React, Node.js, Flask, Celery, and RabbitMQ**, along with data tooling like **Airflow, DBT, BigQuery, and Elasticsearch**. I’m comfortable across both application and data engineering — from building **full-stack platforms** and scalable ingestion systems to authoring **BRAGS**, a published Python package for customizable on-device RAG pipelines with a Go-based file watcher. I also enjoy exploring lower-level programming in **C and Rust** to better understand performance and concurrency.\n\nOutside engineering, I’m a **passionate reader, astronomy enthusiast, and occasional graphic designer**. I actively contribute to open source, participate in hackathons, and speak at developer communities, including a session on **Unix file descriptors and PTY internals** at **FOSS United Pune**.",
+        "I'm a **Software Engineer** and **Full-Stack Developer** working on backend systems at **Intangles**, where I scale high-throughput event consumers with **Redis**-cached short-circuiting, led the org-wide **OpenTelemetry** observability rollout, and drive platform stability work on **TimescaleDB**. Previously at **NiCE Ltd**, I optimized **C#** application logic and built scalable document ingestion pipelines on AWS. My interests span systems programming, Generative AI, and building reliable developer-focused tools.\n\nMy day-to-day toolbox includes **Python, Java, JavaScript/TypeScript, and C#**, with meaningful experience across **Django/DRF, React, Node.js, Flask, Celery, and RabbitMQ**, along with data tooling like **Airflow, DBT, BigQuery, and Elasticsearch**. I’m comfortable across both application and data engineering — from building **full-stack platforms** and scalable ingestion systems to authoring **BRAGS**, a published Python package for customizable on-device RAG pipelines with a Go-based file watcher. I also enjoy exploring lower-level programming in **C and Rust** to better understand performance and concurrency.\n\nOutside engineering, I’m a **passionate reader, astronomy enthusiast, and occasional graphic designer**. I actively contribute to open source, participate in hackathons, and speak at developer communities, including a session on **Unix file descriptors and PTY internals** at **FOSS United Pune**.",
     avatarUrl: "/me.png",
     skills: [
         "Java",
@@ -40,6 +40,10 @@ export const DATA = {
         "BigQuery",
         "GCS",
         "AWS Bedrock",
+        "OpenTelemetry",
+        "Distributed Tracing",
+        "Claude Code",
+        "GitHub Copilot",
     ],
     iconCloud: [
         "java",
@@ -64,6 +68,7 @@ export const DATA = {
         "googlebigquery",
         "googlecloud",
         "amazonaws",
+        "opentelemetry",
         "git",
         "github",
         "linux",
@@ -113,12 +118,12 @@ export const DATA = {
             href: "https://www.intangles.ai/",
             badges: [],
             location: "Pune",
-            title: "Backend Development Engineer",
+            title: "Backend Software Development Engineer",
             logoUrl: "/Intangles.png",
-            start: "June 2025",
+            start: "June 2026",
             end: "Present",
             description:
-                "Added observability to python services. Optimized core API's and contribute to the platform stability of the company",
+                "Boosted throughput by 4x for the org's most-used event consumer using a Redis-cached short-circuit and a heuristics-based approach with push invalidation to minimize redundant compute. Owned the end-to-end OpenTelemetry rollout, establishing the entire org's observability baseline. Drove a platform stability initiative on TimescaleDB: profiled consumption patterns, cut redundant reads and double-count queries, and shipped several database optimizations.",
         },
         {
             company: "NiCE Ltd",
@@ -128,7 +133,7 @@ export const DATA = {
             title: "Associate Software Development Engineer",
             logoUrl: "/nice.png",
             start: "July 2025",
-            end: "June 2026",
+            end: "May 2026",
             description:
                 "Optimized core backend application logic in C#, improving performance and reliability of critical paths. Fixed an infinite reprocessing issue in the DLQ by debugging and correcting routing logic to prevent unwanted retries. Designed document ingestion pipelines with checkpointing, batch processing, retry logic, and failure handling. Leveraged AWS services like Bedrock, Lambda, and Batch to build scalable, event-driven cloud solutions.",
         },
@@ -173,7 +178,7 @@ export const DATA = {
         {
             school: "Pune Institute of Computer Technology",
             href: "https://pict.edu",
-            degree: "Bachelor of Engineering (B.E.) in Computer Engineering — CGPA: 8.8",
+            degree: "Bachelor of Engineering (B.E.) in Computer Engineering (Hons. Data Science and Visualization) — CGPA: 8.8",
             logoUrl: "/pict.jpg",
             start: "July 2021",
             end: "July 2025",
@@ -206,7 +211,7 @@ export const DATA = {
             dates: "BE Project, 2024 - 2025",
             active: true,
             description:
-                "Media authenticity system that signs images at capture with an emulated Secure Enclave and verifies them via steganographic watermarks.",
+                "Media authenticity system that signs images at capture with RSA-signed, hardware-backed device hashes and verifies them through a dual-channel scheme (EXIF metadata + embedded QR watermark) that degrades gracefully when metadata is stripped.",
             technologies: ["Python", "FastAPI", "Gradio", "OpenCV", "PyWavelets"],
             links: [
                 {
@@ -412,6 +417,23 @@ export const DATA = {
                     title: "Merged PRs",
                     icon: <Icons.github className="size-3" />,
                     href: "https://github.com/CircuitVerse/CircuitVerse/pulls?q=is%3Apr+author%3AOmkar-Wagholikar+is%3Aclosed",
+                },
+            ],
+        },
+        {
+            title: "Open Source: AeroFTP",
+            type: "Open Source",
+            dates: "2026",
+            position: "3 features co-authored",
+            location: "Remote",
+            description:
+                "Co-authored 3 features in AeroFTP: theming, security, and UI layout.",
+            image: "",
+            links: [
+                {
+                    title: "Commits",
+                    icon: <Icons.github className="size-3" />,
+                    href: "https://github.com/search?q=repo%3Aaxpdev-lab%2Faeroftp+Omkar-Wagholikar&type=commits",
                 },
             ],
         },
